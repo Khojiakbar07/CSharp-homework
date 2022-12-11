@@ -155,13 +155,26 @@ namespace task3
 
             /*Task 13 -----------------------*/
             /*Task 14
-            Console.WriteLine(ThreeIncreasingAdjacent(new[] { 45, 23, 44, 68, 65, 70, 80, 81, 82 }));
-            Console.WriteLine(ThreeIncreasingAdjacent(new[] { 7, 3, 5, 8, 9, 3, 1, 4 }));
+            int[] arr = {45, 23, 44, 68, 65, 70, 80, 81, 82 };
+            int n = arr.Length;
 
-            bool ThreeIncreasingAdjacent(int[] array)
+                if (ThreeIncreasingAdjacent(arr, n) == true)
+                    Console.Write("True" );
+                else
+                    Console.Write("False");
+            Console.ReadLine();
+            }
+            static bool ThreeIncreasingAdjacent(int[] arr, int n)
             {
-                while
-            } */
+                for (int i = 1; i < n; i++)
+                {
+                    if (arr[i] != arr[i + 1] + 1 && arr[i + 1] != arr[i + 2] + 1)
+                    {
+                        return true;
+                    }
+                }
+            return false;
+            */
 
             /*Task 15 
             int a = 0;
